@@ -60,7 +60,7 @@ jobs:
         rm -rf ./op-adguardhome/*
         rm -rf ./luci-app-adguardhome
         rm -rf ./theme-18.06/luci-theme-opentomcat
-        rm rf ./path/autocore
+        rm -rf ./path/autocore
         
  
         git clone https://github.com/zzsj0928/luci-app-pushbot ./luci-app-pushbot
