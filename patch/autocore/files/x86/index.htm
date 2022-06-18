@@ -747,18 +747,18 @@
 		<tr><td width="33%"><%:Model%></td><td><%=pcdata(boardinfo.model or "?")%></td></tr>
 		<tr><td width="33%"><%:CPU Info%></td><td><%=luci.sys.exec("/sbin/cpuinfo") or "?"%>  <%=luci.sys.exec("cat /etc/bench.log |awk -F '.' '{print $1}'") or " "%></td></tr>
 		<tr><td width="33%"><%:Architecture%></td><td><%=pcdata(boardinfo.release.target or "?")%></td></tr>
-		<tr><td width="33%"><%:CPU温度%></td><td id="cpuwd">-</td></tr>
-		<tr><td width="33%"><%:CPU负载%></td><td id="cpuusage">-</td></tr>
-		<tr><td width="33%"><%:运行内存%></td><td > <%=luci.sys.exec("free -m  | grep Mem | awk '{print $2/1024}'|  awk -F '.' '{print $1}'").."MB"%></td></tr>
-
+		<tr><td width="33%"><%:Firmware Version%></td><td><%=pcdata(ver.distname)%> <%=pcdata(ver.distversion)%></td></tr>
 		<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>
 		<tr><td width="33%"><%:Local Time%></td><td id="localtime">-</td></tr>
 		<tr><td width="33%"><%:Uptime%></td><td id="uptime">-</td></tr>
+		<tr><td width="33%"><%:运行内存%></td><td > <%=luci.sys.exec("free -m  | grep Mem | awk '{print $2/1024}'|  awk -F '.' '{print $1}'").."MB"%></td></tr>
+		<tr><td width="33%"><%:CPU温度%></td><td id="cpuwd">-</td></tr>
+		<tr><td width="33%"><%:CPU使用率（%）%></td><td id="cpuusage">-</td></tr>
 		<tr><td width="33%"><%:Load Average%></td><td id="loadavg">-</td></tr>
-		<tr><td width="33%"><%:Firmware Version%></td><td>
-			<%=pcdata(ver.distname)%> <%=pcdata(ver.distversion)%>
-		</td></tr>
-		<tr><td width="33%"><%:固件作者%></td><td id="cpuusage"><input type="button" class="cbi-button cbi-button-apply" value="<%:刀刀%>" onclick="window.open('https://www.right.com.cn/forum/?341827')" /><input type="button" class="cbi-button cbi-button-apply" value="<%:交流群%>" onclick="window.open('https://jq.qq.com/?_wv=1027&k=frTIqknb')" /></td></tr>
+		
+			
+		
+		
 </table>
 </fieldset>
 
