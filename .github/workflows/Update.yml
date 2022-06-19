@@ -104,6 +104,7 @@ jobs:
         git clone https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon-18.06
         git clone https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
+        svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme/luci-theme-opentomcat
         
         svn export https://github.com/kiddin9/openwrt-packages/trunk/filebrowser ./op-fileBrowser/filebrowser
         svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-filebrowser ./op-fileBrowser/luci-app-filebrowser
@@ -128,7 +129,6 @@ jobs:
         
         ##自修改
         git clone https://github.com/kiddin9/openwrt-adguardhome ./op-adguardhome
-        svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme/luci-theme-opentomcat-18.06
         svn co https://github.com/HiJwm/MySettings/trunk/lean/myautocore ./patch/autocore   
     
     - name: 删除多余文件
