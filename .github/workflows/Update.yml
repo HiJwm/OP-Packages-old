@@ -126,6 +126,7 @@ jobs:
         svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme-18.06/luci-theme-opentomcat
         svn co https://github.com/HiJwm/MySettings/trunk/lean/myautocore ./patch/autocore   
     
+        
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       continue-on-error: true
@@ -133,12 +134,21 @@ jobs:
         retain_days: 1
         keep_minimum_runs: 3
 
-   
- 
-    
-    
+  
     - name: Apply
       run: |
         git add .
         git commit -m "Sync: $(date +%Y-%m-%d" "%H:%M)"
         git push -f 
+  
+    - name: 删除多余文件
+      run: |
+        rm -rf ./.svn
+        rm -rf ./*/.git
+        rm -rf ./*/.github
+        rm -rf ./*/.svn
+        rm -rf ./*/README.md
+        rm -rf ./*/LICENSE
+        
+        
+        
