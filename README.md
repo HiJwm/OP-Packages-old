@@ -1,5 +1,15 @@
 ### openwrt-packages
+﻿### AutoBuild-OpenWrt
+ ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=HiJwm&show_icons=true&theme=radical)
+ 
+ [1]: https://img.shields.io/badge/license-MIT-brightgreen.svg
+ [2]: /LICENSE
 
+[![license][1]][2]
+[![GitHub Forks](https://img.shields.io/github/forks/HiJwm/OP-Packages.svg?style=flat-square&label=Forks)](https://github.com/HiJwm/HiJwm/OP-Packages/)
+![GitHub Stars](https://img.shields.io/github/starsHiJwm/OP-Packages.svg?style=flat-square&label=Stars&logo=github)
+
+<img src="https://v2.jinrishici.com/one.svg?font-size=24&spacing=2&color=Red">
 #### 个人自用OpenWrt插件库
 
 | 插件 | 说明 |
