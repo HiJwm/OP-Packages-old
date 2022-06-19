@@ -7,7 +7,7 @@
 
 [![license][1]][2]
 [![GitHub Forks](https://img.shields.io/github/forks/HiJwm/OP-Packages.svg?style=flat-square&label=Forks)](https://github.com/HiJwm/HiJwm/OP-Packages/)
-![GitHub Stars](https://img.shields.io/github/starsHiJwm/OP-Packages.svg?style=flat-square&label=Stars&logo=github)
+![GitHub Stars](https://img.shields.io/github/stars/HiJwm/OP-Packages.svg?style=flat-square&label=Stars&logo=github)
 
 <img src="https://v2.jinrishici.com/one.svg?font-size=24&spacing=2&color=Red">
 #### 个人自用OpenWrt插件库
