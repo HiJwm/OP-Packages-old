@@ -61,6 +61,12 @@ jobs:
         rm -rf ./luci-app-adguardhome
         rm -rf ./theme-18.06/luci-theme-opentomcat
         rm -rf ./path/autocore
+        rm -rf ./theme
+        rm -rf ./luci-app-vssr
+        rm -rf ./lua-maxminddb
+        rm -rf ./luci-app-jd-dailybonus
+        rm -rf ./theme-18.06
+        rm -rf ./jerrykuku
         
  
         git clone https://github.com/zzsj0928/luci-app-pushbot ./luci-app-pushbot
@@ -84,19 +90,18 @@ jobs:
         svn export https://github.com/linkease/istore-ui/trunk/app-store-ui ./linkease/app-store-ui
         svn export https://github.com/jjm2473/openwrt-apps/trunk/luci-app-ota ./linkease/luci-app-ota 
               
-        git clone https://github.com/jerrykuku/luci-app-vssr ./jerrykuku/luci-app-vssr
-        git clone https://github.com/jerrykuku/lua-maxminddb ./jerrykuku/lua-maxminddb
-        git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ./jerrykuku/luci-app-jd-dailybonus
-        git clone https://github.com/jerrykuku/luci-theme-argon ./jerrykuku/luci-theme-argon
-        git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 ./jerrykuku/luci-theme-argon-18.06
-        git clone https://github.com/jerrykuku/luci-app-argon-config ./jerrykuku/luci-app-argon-config
+        git clone https://github.com/jerrykuku/luci-app-vssr ./luci-app-vssr
+        git clone https://github.com/jerrykuku/lua-maxminddb ./lua-maxminddb
+        git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ./luci-app-jd-dailybonus
+        git clone https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon
+        git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06 ./theme/luci-theme-argon-18.06
+        git clone https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
 
         git clone https://github.com/destan19/OpenAppFilter ./op-oaf
                              
-        svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./theme-18.06/luci-theme-infinityfreedom
-        git clone https://github.com/kiddin9/luci-theme-edge -b 18.06 ./theme-18.06/luci-theme-edge 
-        git clone https://github.com/xiangfeidexiaohuo/luci-theme-neobird ./theme-18.06/luci-theme-neobird
-                         
+        svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./theme/luci-theme-infinityfreedom-18.06
+        git clone https://github.com/kiddin9/luci-theme-edge -b 18.06 ./theme/luci-theme-edge-18.06 
+        git clone https://github.com/xiangfeidexiaohuo/luci-theme-neobird ./theme/luci-theme-neobird-18.06                         
         svn export https://github.com/kiddin9/openwrt-packages/trunk/filebrowser ./op-fileBrowser/filebrowser
         svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-filebrowser ./op-fileBrowser/luci-app-filebrowser
         
@@ -123,7 +128,7 @@ jobs:
         #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome ./op-adguardhome/luci-app-adguardhome
         #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome ./op-adguardhome/adguardhome
         git clone https://github.com/kiddin9/openwrt-adguardhome ./op-adguardhome
-        svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme-18.06/luci-theme-opentomcat
+        svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme/luci-theme-opentomcat-18.06
         svn co https://github.com/HiJwm/MySettings/trunk/lean/myautocore ./patch/autocore   
     
         
