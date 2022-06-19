@@ -90,7 +90,7 @@ jobs:
         git clone https://github.com/jerrykuku/luci-app-vssr ./luci-app-vssr
         git clone https://github.com/jerrykuku/lua-maxminddb ./lua-maxminddb
         git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ./luci-app-jd-dailybonus
-        git clone https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
+        
 
         git clone https://github.com/destan19/OpenAppFilter ./op-oaf
         
