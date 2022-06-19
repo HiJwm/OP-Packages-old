@@ -119,10 +119,10 @@ jobs:
         svn export https://github.com/coolsnowwolf/packages/trunk/net/socat ./op-socat/socat
         git clone https://github.com/sbwml/luci-app-mosdns ./op-mosdns/
         git clone https://github.com/jjm2473/openwrt-alist ./op-alist/
-        rm -rf ./op-alist/.github
+        
         
         ##自修改
-        git clone https://github.com/kiddin9/openwrt-adguardhome.git ./op-adguardhome
+        #git clone https://github.com/kiddin9/openwrt-adguardhome.git ./op-adguardhome
         svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme/luci-theme-opentomcat-18.06
         svn co https://github.com/HiJwm/MySettings/trunk/lean/myautocore ./patch/autocore   
     
