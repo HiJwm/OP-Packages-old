@@ -87,12 +87,12 @@ jobs:
         svn export https://github.com/linkease/istore-ui/trunk/app-store-ui ./linkease/app-store-ui
         svn export https://github.com/jjm2473/openwrt-apps/trunk/luci-app-ota ./linkease/luci-app-ota 
               
-        svn co https://github.com/jerrykuku/luci-app-vssr ./luci-app-vssr
-        svn co https://github.com/jerrykuku/lua-maxminddb ./lua-maxminddb
-        svn co https://github.com/jerrykuku/luci-app-jd-dailybonus ./luci-app-jd-dailybonus
-        svn co https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon
+        git clone https://github.com/jerrykuku/luci-app-vssr ./luci-app-vssr
+        git clone https://github.com/jerrykuku/lua-maxminddb ./lua-maxminddb
+        git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ./luci-app-jd-dailybonus
+        git clone https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon-18.06
-        svn co https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
+        git clone https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
 
         git clone https://github.com/destan19/OpenAppFilter ./op-oaf
                              
