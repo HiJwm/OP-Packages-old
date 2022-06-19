@@ -60,7 +60,7 @@ jobs:
         rm -rf ./op-adguardhome/*
         rm -rf ./luci-app-adguardhome
         rm -rf ./theme-18.06/luci-theme-opentomcat
-        rm -rf /path/autocore
+        rm -rf ./path/autocore
         
  
         git clone https://github.com/zzsj0928/luci-app-pushbot ./luci-app-pushbot
@@ -124,7 +124,7 @@ jobs:
         #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome ./op-adguardhome/adguardhome
         git clone https://github.com/kiddin9/openwrt-adguardhome ./op-adguardhome
         svn export https://github.com/281677160/openwrt-package/trunk/luci-theme-opentomcat ./theme-18.06/luci-theme-opentomcat
-        svn export https://github.com/HiJwm/MySettings/trunk/lean/myautocore ./patch/autocore   
+        svn export -f https://github.com/HiJwm/MySettings/trunk/lean/myautocore ./patch/autocore   
     
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
