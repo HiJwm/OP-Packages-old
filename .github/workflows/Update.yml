@@ -60,6 +60,7 @@ jobs:
         rm -rf ./op-adguardhome
         rm -rf ./path/autocore
         rm -rf ./theme
+        rm -rf ./theme/luci-theme-argon
         rm -rf ./luci-app-vssr
         rm -rf ./lua-maxminddb
         rm -rf ./luci-app-jd-dailybonus
