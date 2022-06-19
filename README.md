@@ -10,7 +10,8 @@
 ![GitHub Stars](https://img.shields.io/github/stars/HiJwm/OP-Packages.svg?style=flat-square&label=Stars&logo=github)
 
 <img src="https://v2.jinrishici.com/one.svg?font-size=24&spacing=2&color=Red">
-#### 个人自用OpenWrt插件库
+
+#### OpenWrt插件库
 
 | 插件 | 说明 |
 | :----: | :----: |
