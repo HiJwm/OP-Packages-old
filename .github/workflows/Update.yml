@@ -70,13 +70,14 @@ jobs:
         git clone https://github.com/tty228/luci-app-serverchan ./luci-app-serverchan
         git clone https://github.com/ntlf9t/luci-app-easymesh ./luci-app-easymesh
         git clone https://github.com/yaof2/luci-app-ikoolproxy ./luci-app-ikoolproxy
-        rm -rf ./luci-app-ikoolproxy/.github       
         svn export https://github.com/Lienol/openwrt-package/trunk/luci-app-kodexplorer ./luci-app-kodexplorer
         
+        ##docker&dockerman相关
         svn export https://github.com/lisaac/luci-lib-docker/trunk/collections/luci-lib-docker ./lisaac/luci-lib-docker
         svn export https://github.com/lisaac/luci-app-diskman/trunk/applications/luci-app-diskman ./lisaac/luci-app-diskman
         svn export https://github.com/lisaac/luci-app-dockerman/trunk/applications/luci-app-dockerman ./lisaac/luci-app-dockerman
         
+        ##koolcenter相关插件
         svn export https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-ddnsto ./linkease/luci-app-ddnsto
         svn export https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-linkease ./linkease/luci-app-linkease
         svn export https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-quickstart ./linkease/luci-app-quickstart
@@ -87,6 +88,7 @@ jobs:
         svn export https://github.com/linkease/istore-ui/trunk/app-store-ui ./linkease/app-store-ui
         svn export https://github.com/jjm2473/openwrt-apps/trunk/luci-app-ota ./linkease/luci-app-ota 
               
+        ##jerrykuku开发插件
         git clone https://github.com/jerrykuku/luci-app-vssr ./luci-app-vssr
         git clone https://github.com/jerrykuku/lua-maxminddb ./lua-maxminddb
         git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ./luci-app-jd-dailybonus
@@ -113,7 +115,6 @@ jobs:
 
         ## wall相关
         git clone https://github.com/xiaorouji/openwrt-passwall ./patch/wall
-        rm -rf ./patch/wall/.github
         svn export https://github.com/coolsnowwolf/packages/trunk/net/redsocks2 ./patch/wall/redsocks2
         svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall ./patch/wall-luci/luci-app-passwall
         svn export https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus ./patch/wall-luci/luci-app-ssr-plus
@@ -123,7 +124,7 @@ jobs:
         svn export https://github.com/coolsnowwolf/packages/trunk/net/socat ./op-socat/socat
         git clone https://github.com/sbwml/luci-app-mosdns ./op-mosdns/
         git clone https://github.com/jjm2473/openwrt-alist ./op-alist/
-        rm -rf ./op-alist/.github
+        
         
         ##自修改
         git clone https://github.com/kiddin9/openwrt-adguardhome ./op-adguardhome
@@ -135,6 +136,7 @@ jobs:
         rm -rf ./.svn
         rm -rf ./*/.git
         rm -rf ./*/.github
+        rm -rf ./*/*/.github
         rm -rf ./*/.svn
         rm -rf ./*/README.md
         rm -rf ./*/LICENSE    
