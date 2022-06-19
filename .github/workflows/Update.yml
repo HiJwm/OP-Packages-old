@@ -95,10 +95,16 @@ jobs:
         git clone https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
 
         git clone https://github.com/destan19/OpenAppFilter ./op-oaf
-                             
+        
+        ##主题
+        svn export https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-opentopd ./theme/luci-theme-opentopd
         svn export https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom ./theme/luci-theme-infinityfreedom-18.06
         #git clone https://github.com/kiddin9/luci-theme-edge -b 18.06 ./theme/luci-theme-edge-18.06 
         #git clone https://github.com/xiangfeidexiaohuo/luci-theme-neobird ./theme/luci-theme-neobird-18.06                         
+        git clone https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon ./theme/luci-theme-argon-18.06
+        git clone https://github.com/jerrykuku/luci-app-argon-config ./theme/luci-app-argon-config
+        
         svn export https://github.com/kiddin9/openwrt-packages/trunk/filebrowser ./op-fileBrowser/filebrowser
         svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-filebrowser ./op-fileBrowser/luci-app-filebrowser
         
@@ -107,7 +113,7 @@ jobs:
         svn export https://github.com/messense/aliyundrive-fuse/trunk/openwrt/aliyundrive-fuse ./op-aliyun/aliyundrive-fuse
         svn export https://github.com/messense/aliyundrive-fuse/trunk/openwrt/luci-app-aliyundrive-fuse ./op-aliyun/luci-app-aliyundrive-fuse
 
-        
+        ## wall相关
         git clone https://github.com/xiaorouji/openwrt-passwall ./patch/wall
         rm -rf ./patch/wall/.github
         svn export https://github.com/coolsnowwolf/packages/trunk/net/redsocks2 ./patch/wall/redsocks2
