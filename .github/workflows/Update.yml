@@ -138,7 +138,7 @@ jobs:
         rm -rf ./*/.github
         rm -rf ./*/*/.github
         rm -rf ./*/.svn
-        rm -rf ./*/README.md
+        #rm -rf ./*/README.md
         rm -rf ./*/LICENSE    
     
     - name: Delete workflow runs
