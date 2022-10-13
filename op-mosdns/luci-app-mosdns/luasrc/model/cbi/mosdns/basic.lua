@@ -90,7 +90,7 @@ adblock.default = false
 
 adblock = s:option(Value, "ad_source", translate("ADblock Source"))
 adblock:depends("adblock", "1")
-adblock.default = "geosite.dat"
+adblock.default = "https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt"
 adblock:value("geosite.dat", "v2ray-geosite")
 adblock:value("https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-domains.txt", "anti-AD")
 adblock:value("https://cdn.jsdelivr.net/gh/sjhgvr/oisd@main/dbl_basic.txt", "oisd (basic)")
